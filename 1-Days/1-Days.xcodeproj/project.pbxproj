@@ -12,6 +12,10 @@
 		FF6922512AF8C4C5009F1797 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6922502AF8C4C5009F1797 /* ViewController.swift */; };
 		FF6922542AF8C4C5009F1797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6922522AF8C4C5009F1797 /* Main.storyboard */; };
 		FF6922562AF8C4C7009F1797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6922552AF8C4C7009F1797 /* Assets.xcassets */; };
+		FF6922622AF8FE05009F1797 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6922612AF8FE05009F1797 /* User.swift */; };
+		FF6922642AF90079009F1797 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6922632AF90079009F1797 /* Product.swift */; };
+		FF6922672AF910EB009F1797 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6922662AF910EB009F1797 /* Utils.swift */; };
+		FF6922692AF91D6B009F1797 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6922682AF91D6B009F1797 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		FF6922532AF8C4C5009F1797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF6922552AF8C4C7009F1797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF69225A2AF8C4C8009F1797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF6922612AF8FE05009F1797 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FF6922632AF90079009F1797 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FF6922662AF910EB009F1797 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FF6922682AF91D6B009F1797 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,34 @@
 		FF69224B2AF8C4C5009F1797 /* 1-Days */ = {
 			isa = PBXGroup;
 			children = (
+				FF6922652AF910D8009F1797 /* utils */,
+				FF6922602AF8FB37009F1797 /* models */,
 				FF69224C2AF8C4C5009F1797 /* AppDelegate.swift */,
 				FF69224E2AF8C4C5009F1797 /* SceneDelegate.swift */,
 				FF6922502AF8C4C5009F1797 /* ViewController.swift */,
 				FF6922522AF8C4C5009F1797 /* Main.storyboard */,
 				FF6922552AF8C4C7009F1797 /* Assets.xcassets */,
 				FF69225A2AF8C4C8009F1797 /* Info.plist */,
+				FF6922682AF91D6B009F1797 /* RegisterViewController.swift */,
 			);
 			path = "1-Days";
+			sourceTree = "<group>";
+		};
+		FF6922602AF8FB37009F1797 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FF6922612AF8FE05009F1797 /* User.swift */,
+				FF6922632AF90079009F1797 /* Product.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FF6922652AF910D8009F1797 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				FF6922662AF910EB009F1797 /* Utils.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6922622AF8FE05009F1797 /* User.swift in Sources */,
 				FF6922512AF8C4C5009F1797 /* ViewController.swift in Sources */,
+				FF6922692AF91D6B009F1797 /* RegisterViewController.swift in Sources */,
+				FF6922642AF90079009F1797 /* Product.swift in Sources */,
 				FF69224D2AF8C4C5009F1797 /* AppDelegate.swift in Sources */,
 				FF69224F2AF8C4C5009F1797 /* SceneDelegate.swift in Sources */,
+				FF6922672AF910EB009F1797 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

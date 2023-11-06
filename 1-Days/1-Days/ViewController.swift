@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
-    @IBAction func fncSend(_ sender: UIButton) {
+    @IBAction func fncSend1(_ sender: UIButton) {
         
         let email = txtEmail.text!
         let password = txtPassword.text!
@@ -91,6 +91,70 @@ class ViewController: UIViewController {
         let itm1 = arr3[0]
         
         
+        let user1 = User()
+        user1.name = "Ali"
+        user1.surname = "Bilmem"
+        user1.email = "ali@mail.com"
+        
+        let user2 = User()
+        user2.name = "Erkan"
+        user2.surname = "Bil"
+        user2.email = "erkan@mail.com"
+        
+        var users: [User] = []
+        users.append(user1)
+        users.append(user2)
+        
+        for item in users {
+            print(item)
+        }
+        
+        let p1 = Product(title: "TV", price: 20000, status: false)
+        let p2 = Product(title: "iPhone", price: 40000, status: true)
+        let p3 = Product(title: "Samsung", price: 25000)
+        let products:[Product] = [p1,p2, p3]
+        
+        for item in products {
+            print(item)
+        }
+        
+        
+        
+        // Dictionary
+        // Key, Val
+        var dic: [String: Any] = ["name": "Kemal", "surname": "Bilirim", "age": 30 ]
+        var dic1: [String: Any] = ["name": "Zehra", "surname": "Bil", "age": 25 ]
+        var dic2: [String: Any] = ["name": "Ahmet", "surname": "Bilsin", "age": 35 ]
+        dic["name"] = "Kenan"
+        
+        // add item
+        dic["status"] = true
+        
+        // remove item
+        //dic.removeValue(forKey: "status")
+        print(dic)
+        
+        
+        for (key, val) in dic {
+            print("\(key) - \(val)")
+        }
+        
+        var arr4:[Dictionary<String, Any>] = []
+        arr4.append(dic)
+        arr4.append(dic1)
+        arr4.append(dic2)
+        
+        for item in arr4 {
+           print("=================")
+            for (key, val) in item {
+               print("\(key) \(val)")
+            }
+        }
+        
+        // Util Class
+        let util = Utils()
+        let sm = util.sum(num1: 44,num2: 88)
+        print("Sum: \(sm)")
         
     }
 
