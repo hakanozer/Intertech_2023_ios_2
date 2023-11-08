@@ -16,6 +16,10 @@
 		FFC42C322AFB6DD900935F5D /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC42C312AFB6DD900935F5D /* LikesViewController.swift */; };
 		FFC42C342AFB6DF400935F5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC42C332AFB6DF400935F5D /* ProfileViewController.swift */; };
 		FFC42C362AFB754A00935F5D /* AppTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC42C352AFB754A00935F5D /* AppTabbarController.swift */; };
+		FFF55B012AFB9E530057FD98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF55B002AFB9E530057FD98 /* LoginViewController.swift */; };
+		FFF55B042AFBAB7F0057FD98 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF55B032AFBAB7F0057FD98 /* UserModel.swift */; };
+		FFF55B062AFBB62C0057FD98 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF55B052AFBB62C0057FD98 /* Util.swift */; };
+		FFF55B082AFBC1E30057FD98 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF55B072AFBC1E30057FD98 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		FFC42C312AFB6DD900935F5D /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
 		FFC42C332AFB6DF400935F5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FFC42C352AFB754A00935F5D /* AppTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabbarController.swift; sourceTree = "<group>"; };
+		FFF55B002AFB9E530057FD98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FFF55B032AFBAB7F0057FD98 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FFF55B052AFBB62C0057FD98 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		FFF55B072AFBC1E30057FD98 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,6 @@
 				B7DE6931F24503B76E9A382A /* Pods-Project.debug.xcconfig */,
 				88C25BEDBC6E1194A9F7BA7D /* Pods-Project.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +92,7 @@
 		FFC42C1A2AFB67E800935F5D /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				FFF55B022AFBAA8B0057FD98 /* models */,
 				FFC42C1B2AFB67E800935F5D /* AppDelegate.swift */,
 				FFC42C1D2AFB67E800935F5D /* SceneDelegate.swift */,
 				FFC42C212AFB67E800935F5D /* Main.storyboard */,
@@ -94,8 +102,19 @@
 				FFC42C312AFB6DD900935F5D /* LikesViewController.swift */,
 				FFC42C332AFB6DF400935F5D /* ProfileViewController.swift */,
 				FFC42C352AFB754A00935F5D /* AppTabbarController.swift */,
+				FFF55B002AFB9E530057FD98 /* LoginViewController.swift */,
+				FFF55B052AFBB62C0057FD98 /* Util.swift */,
+				FFF55B072AFBC1E30057FD98 /* WelcomeViewController.swift */,
 			);
 			path = Project;
+			sourceTree = "<group>";
+		};
+		FFF55B022AFBAA8B0057FD98 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FFF55B032AFBAB7F0057FD98 /* UserModel.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF55B012AFB9E530057FD98 /* LoginViewController.swift in Sources */,
+				FFF55B082AFBC1E30057FD98 /* WelcomeViewController.swift in Sources */,
+				FFF55B062AFBB62C0057FD98 /* Util.swift in Sources */,
 				FFC42C302AFB6DB600935F5D /* ProductViewController.swift in Sources */,
+				FFF55B042AFBAB7F0057FD98 /* UserModel.swift in Sources */,
 				FFC42C1C2AFB67E800935F5D /* AppDelegate.swift in Sources */,
 				FFC42C342AFB6DF400935F5D /* ProfileViewController.swift in Sources */,
 				FFC42C362AFB754A00935F5D /* AppTabbarController.swift in Sources */,
