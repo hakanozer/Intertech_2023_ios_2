@@ -8,5 +8,9 @@ target 'Project' do
   # Pods for Project
   pod 'Alamofire', '~> 5.8'
   pod 'SCLAlertView', '~> 0.8'
+  pod 'SDWebImage', '~> 5.0'
+  pod 'ProgressHUD', '~> 13.8.6'
+  pod 'ImageSlideshow', '~> 1.9'
+  pod "ImageSlideshow/SDWebImage", '~> 1.9'
 
 end
