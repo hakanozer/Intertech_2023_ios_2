@@ -9,6 +9,8 @@ import Foundation
 
 class Util {
     
+    static let sqlitePath = "/Users/hakan/Documents/Intertech_2023_ios_2/Project/Project/db/project.sqlite3"
+    
     static func userStore( data: UserModel ) {
         if let jsonUserModel = try? JSONEncoder().encode(data) {
             UserDefaults.standard.setValue(jsonUserModel, forKey: "user")

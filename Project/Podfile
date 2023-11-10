@@ -12,5 +12,7 @@ target 'Project' do
   pod 'ProgressHUD', '~> 13.8.6'
   pod 'ImageSlideshow', '~> 1.9'
   pod "ImageSlideshow/SDWebImage", '~> 1.9'
+  pod 'SQLite.swift', '~> 0.14'
+  pod 'TextFieldEffects', '~> 1.6'
 
 end

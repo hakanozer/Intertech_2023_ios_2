@@ -6,16 +6,47 @@
 //
 
 import UIKit
+import SQLite
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    let center = UNUserNotificationCenter.current()
+    let options: UNAuthorizationOptions = [.badge, .alert, .sound]
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        databaseTablecreate()
+        
+        // Notification Permission
+        center.getNotificationSettings { (settings) in
+            if settings.authorizationStatus != .authorized {
+                self.center.requestAuthorization( options: self.options ) { (accept, error) in
+                    if !accept {
+                        print("Permission Error")
+                    }
+                }
+            }
+        }
+        
         return true
     }
+    
+    func databaseTablecreate() {
+        let db = try! Connection(Util.sqlitePath)
+        let likes = Table("likes")
+        do {
+            let lid = Expression<Int64>("lid")
+            let pid = Expression<Int64>("pid")
+            try db.run(likes.create(ifNotExists: true) { t in
+                t.column(lid, primaryKey: true)
+                t.column(pid)
+            })
+        }catch {
+            print(error)
+        }
+    }
+    
 
     // MARK: UISceneSession Lifecycle
 

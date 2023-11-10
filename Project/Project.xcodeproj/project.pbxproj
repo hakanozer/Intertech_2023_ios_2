@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B3436BE64F3FFBCB3843D1F /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980E587EC5D843D3B8ED82AC /* Pods_Project.framework */; };
 		FF0D2B4A2AFCF61C00E5E33F /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D2B492AFCF61C00E5E33F /* ProductDetailViewController.swift */; };
+		FF5A24982AFE0A8E00A220E5 /* project.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = FF5A24972AFE0A8E00A220E5 /* project.sqlite3 */; };
 		FF914BA52AFCB7A00002E96C /* ProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF914BA42AFCB7A00002E96C /* ProductsModel.swift */; };
 		FF914BA92AFCC7F20002E96C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF914BA72AFCC7F20002E96C /* ProductCell.swift */; };
 		FF914BAA2AFCC7F20002E96C /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF914BA82AFCC7F20002E96C /* ProductCell.xib */; };
@@ -31,6 +32,7 @@
 		980E587EC5D843D3B8ED82AC /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DE6931F24503B76E9A382A /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		FF0D2B492AFCF61C00E5E33F /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		FF5A24972AFE0A8E00A220E5 /* project.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = project.sqlite3; sourceTree = "<group>"; };
 		FF914BA42AFCB7A00002E96C /* ProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsModel.swift; sourceTree = "<group>"; };
 		FF914BA72AFCC7F20002E96C /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		FF914BA82AFCC7F20002E96C /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF5A24962AFE0A6A00A220E5 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A24972AFE0A8E00A220E5 /* project.sqlite3 */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
 		FF914BA62AFCC75B0002E96C /* components */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		FFC42C1A2AFB67E800935F5D /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				FF5A24962AFE0A6A00A220E5 /* db */,
 				FF914BA62AFCC75B0002E96C /* components */,
 				FFF55B022AFBAA8B0057FD98 /* models */,
 				FFC42C1B2AFB67E800935F5D /* AppDelegate.swift */,
@@ -198,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF914BAA2AFCC7F20002E96C /* ProductCell.xib in Resources */,
+				FF5A24982AFE0A8E00A220E5 /* project.sqlite3 in Resources */,
 				FFC42C252AFB67EA00935F5D /* Assets.xcassets in Resources */,
 				FFC42C232AFB67E800935F5D /* Main.storyboard in Resources */,
 			);

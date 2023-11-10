@@ -8,8 +8,40 @@
 import UIKit
 import ImageSlideshow
 import WebKit
+import SQLite
 
 class ProductDetailViewController: UIViewController, ImageSlideshowDelegate {
+    
+    let db = try! Connection(Util.sqlitePath)
+    let likes = Table("likes")
+    let pid = Expression<Int64>("pid")
+    
+    @IBOutlet weak var btnLike: UIButton!
+    @IBAction func fncLike(_ sender: UIButton) {
+        
+        // control
+        let row = likes.filter(pid == Int64(item!.id))
+        let count = try! db.scalar(row.count)
+        if count ==  0 {
+            let result = likes.insert(pid <- Int64(item!.id))
+            let rowid = try! db.run(result)
+            if rowid > 0 {
+                print("Insert Succes \(rowid)")
+                btnLike.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+                btnLike.tintColor = UIColor.red
+            }
+        }else {
+            let rowid = try! db.run(row.delete())
+            if rowid > 0 {
+                print("Delete Succes \(rowid)")
+                btnLike.setImage(UIImage(systemName: "heart"), for: .normal)
+                btnLike.tintColor = UIColor.black
+            }
+        }
+        
+        
+        
+    }
     
     @IBOutlet weak var txtTitle: UILabel!
     @IBOutlet weak var txtDetail: UITextView!
@@ -27,6 +59,15 @@ class ProductDetailViewController: UIViewController, ImageSlideshowDelegate {
         super.viewDidLoad()
         
         if ( item != nil ) {
+            
+            // sqlite start
+            let row = likes.filter(pid == Int64(item!.id))
+            let count = try! db.scalar(row.count)
+            if ( count > 0 ) {
+                btnLike.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+                btnLike.tintColor = UIColor.red
+            }
+            // sqlite end
            
             var imageArr: [SDWebImageSource] = []
             for imgPath in item.images {

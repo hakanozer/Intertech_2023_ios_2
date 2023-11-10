@@ -11,6 +11,10 @@ PODS:
   - SDWebImage (5.13.0):
     - SDWebImage/Core (= 5.13.0)
   - SDWebImage/Core (5.13.0)
+  - SQLite.swift (0.14.1):
+    - SQLite.swift/standard (= 0.14.1)
+  - SQLite.swift/standard (0.14.1)
+  - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.8)
@@ -19,6 +23,8 @@ DEPENDENCIES:
   - ProgressHUD (~> 13.8.6)
   - SCLAlertView (~> 0.8)
   - SDWebImage (~> 5.0)
+  - SQLite.swift (~> 0.14)
+  - TextFieldEffects (~> 1.6)
 
 SPEC REPOS:
   trunk:
@@ -27,6 +33,8 @@ SPEC REPOS:
     - ProgressHUD
     - SCLAlertView
     - SDWebImage
+    - SQLite.swift
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
@@ -34,7 +42,9 @@ SPEC CHECKSUMS:
   ProgressHUD: ee8924300accca88bfa39f6350f757c1c869a69c
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SDWebImage: 0327043dbb9533e75f2eff8445b3df0f2ceca6ac
+  SQLite.swift: 2992550ebf3c5b268bf4352603e3df87d2a4ed72
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 7e79122644798ea4430cfbcd7f2c229d7718c0b0
+PODFILE CHECKSUM: 37dc72cae0939bb7bca9ec7840c0e9e02bce9392
 
 COCOAPODS: 1.13.0
